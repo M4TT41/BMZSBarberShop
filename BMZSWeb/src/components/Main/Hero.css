@@ -1,0 +1,183 @@
+.landing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+    height: 85vh;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+.hero {
+    grid-column: 1;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 1;
+}
+
+.company {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    font-size: 7rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 3rem;
+}
+
+.ctaButton {
+    background: linear-gradient(45deg, rgb(0, 150, 200), rgb(30, 0, 200));
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 4rem;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.ctaButton:hover {
+    background: linear-gradient(45deg, rgb(0, 150, 200), rgb(30, 0, 200));
+    box-shadow: 0 4px 15px rgba(30, 0, 200, 0.3);
+}
+
+.imageGrid {
+    grid-column: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 1rem;
+    height: 80vh;
+}
+
+.imageC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    width: 45%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.stroke {
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}
+
+.strokeB {
+    color: white;
+    -webkit-text-stroke: 3px black;
+}
+
+.gridImg {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.imageC p {
+    margin-top: 0.5rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.textP {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .landing {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    
+    .hero {
+        grid-column: 1;
+        height: auto;
+        padding: 3rem 0;
+    }
+    
+    .company {
+        font-size: 5rem;
+    }
+    
+    .imageGrid {
+        grid-column: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+    
+    .imageC {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .company {
+        font-size: 3.5rem;
+    }
+    
+    .textP {
+        font-size: 1.5rem;
+    }
+    
+    .ctaButton {
+        font-size: 1.6rem;
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .imageC {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .company {
+        font-size: 3rem;
+    }
+    
+    .textP {
+        font-size: 1.3rem;
+    }
+    
+    .ctaButton {
+        font-size: 1.4rem;
+        padding: 0.7rem 1.2rem;
+    }
+    
+    .imageC {
+        width: 95%;
+    }
+} 

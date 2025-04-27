@@ -1,0 +1,119 @@
+.pfp {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.pfpContainer {
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+    margin-bottom: 3rem;
+}
+
+.pfpIcon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    padding: 0.3rem;
+    font-size: 2rem;
+    transform: translate(50%, 50%);
+}
+
+.userDetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: rgba(85, 85, 85, 0.3);
+    border-radius: 2rem;
+    width: 50vw;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.user{
+    height: fit-content !important;
+    margin-bottom: 5rem ;
+    display: flex !important;
+    align-items: center;
+}
+
+.userItem{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.userItem>input{
+    /* border-radius: 12px;
+    outline: none;
+    border: 3px solid #9e9e9e;
+    background: #b1b1b183;
+    color: white;
+    font-size: 1.3rem;
+    height: 3rem;
+    margin-right: 3rem; */
+
+    width: 95%;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    outline: none;
+
+}
+
+
+.submitButton{
+    background: linear-gradient(45deg, rgb(0, 150, 200), rgb(30, 0, 200));
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+@media (max-width: 1036px) {
+
+    .user{
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+    .userDetails {
+        flex-direction: column;
+        width: 50vw;
+    }
+
+    .userItems {
+        width: 70%;
+    }
+
+    .userItem {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .userItem > input {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .pfpContainer {
+        margin-bottom: 2rem;
+    }
+}
+
+

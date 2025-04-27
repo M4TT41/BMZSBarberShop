@@ -1,0 +1,139 @@
+.menu {
+    user-select: none;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+   
+    position: sticky;
+    top: 0.5rem;
+    z-index: 1000;
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+    
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    border: 1px solid #ffffff20;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    transition: all 0.3s ease-in-out;
+    gap: 20%;
+    border-radius: 1rem;
+}
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: sticky;
+    
+}
+.navBar a:first-child{
+    padding-right: 1rem;
+    padding-left: 1.7rem;
+}
+
+
+
+.navBar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.7rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.navBar a:hover {
+    background-color: rgba(169, 141, 109, 0.1);
+    transform: scale(1.1); 
+    filter: brightness(0) saturate(100%) invert(43%) sepia(40%) saturate(3143%) hue-rotate(165deg) brightness(91%) contrast(103%);
+}
+
+a img {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    padding-left: 0.2rem;
+}
+
+
+
+.loginButton {
+    position: absolute;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.loginButton:hover {
+    transform: scale(1.1); 
+}
+
+.avatarImg {
+    width: 3.3rem;
+    height: 3.3rem;
+    object-fit:cover;
+    border-radius: 50%;
+   
+    transition: transform 0.3s ease;
+}
+
+.avatarImg:hover {
+    transform: scale(1.1); 
+    
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        top: auto;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        border-radius: 0;
+        gap: 0;
+        justify-content: space-around;
+        padding: 0.5rem 0;
+        
+    }
+
+    .navBar {
+        flex-direction: row;
+        width: 100%;
+        
+    }
+
+    .navBar a {
+        margin: 0;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    .loginButton {
+        position: static;
+        padding-right: 1rem;
+    }
+
+    .avatarImg {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}

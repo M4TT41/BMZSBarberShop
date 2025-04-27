@@ -1,0 +1,209 @@
+.summary{
+   
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.summaryContainer{
+    display: grid ;
+    grid-template-columns: 1fr 2fr !important;
+    align-items: baseline;
+    width: fit-content;
+    height: 70vh;
+    margin: 2rem auto;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #ffffff20;
+    backdrop-filter: blur(12px);
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+
+.summaryItem>input{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 1.3rem;
+    border-radius: 12px;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 1rem;
+}
+.summaryItem>input:focus{
+    outline: none;
+}
+.user{
+   
+    width: 60vw;
+    height: 70vh;
+    margin: 2rem auto;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #ffffff20;
+    backdrop-filter: blur(12px);
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+.summaryDetails{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    flex-direction: row;
+    gap: 2rem;
+    
+}
+
+
+.bookingActions {
+    display: flex;
+    gap: 1rem;
+
+
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.confirmButton, .cancelButton {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.confirmButton {
+    background-color: #28a745;
+    color: white;
+}
+
+.confirmButton:hover {
+    background-color: #218838;
+}
+
+.cancelButton {
+    background-color: #dc3545;
+    color: white;
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+
+
+    font-weight: 600;
+    color: #fff;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cancelButton:hover {
+    background-color: #c82333;
+}
+.summaryItem {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 3rem;
+    border-radius: 1rem;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.summaryItem:hover {
+    transform: scale(1.03);
+}
+
+.summaryItem h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    border-bottom: 1px solid #ffffff30;
+    padding-bottom: 0.3rem;
+}
+
+.summaryItem p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin: 0.2rem 0;
+}
+
+.user h2 {
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 1362px) {
+
+    .summaryContainer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        height: fit-content;
+        margin-bottom: 7rem;
+        font-size: 1rem;
+    }
+
+    .current{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .summaryDetails{
+        width: fit-content;
+    }
+    .summaryItem{
+        font-size: 1rem;
+ 
+    }
+ 
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    .summaryContainer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        height: fit-content;
+        margin-bottom: 7rem;
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    .current{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .summaryDetails{
+       display: flex !important;
+       flex-direction: column;
+    }
+    .summaryItem{
+        font-size: 1rem;
+        width: fit-content;
+        height: fit-content;
+    }
+
+}

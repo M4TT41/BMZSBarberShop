@@ -1,0 +1,409 @@
+.calendarSelect {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    padding: 2rem;    
+    border-radius: 1.56rem;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    backdrop-filter: blur(12px);
+    transition: all 0.3s ease-in-out;
+    gap: 2rem;
+    height: 68vh;
+}
+
+.calendar {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+}
+
+.calendarInside {
+    background-color: rgba(51, 51, 51,0.3);
+    padding: 2rem 8rem;
+    border-radius: 10px;
+}
+
+.dateSelect {
+    background-color: rgba(51, 51, 51,0.3);
+    margin: 0rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    width: 100%;
+    height: 70vh;
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+
+
+}
+
+.day.today:hover {
+    color: black;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.25rem;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+
+    
+}
+
+.weekDays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.weekDays>div:last-child {
+    color: red;
+}
+
+.currentMonthText::first-letter {
+    text-transform: capitalize;
+}
+
+.currentMonth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.day, .empty {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2rem;
+    border-radius: 12px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.day {
+    background: #333;
+}
+
+.empty {
+    background: #222;
+}
+
+.currentDate {
+    font-size: 2rem;
+}
+
+.change {
+    border-radius: 12px;
+    font-size: 1.5rem; 
+    background-color: #444; 
+    color: white;
+    margin: 0 1rem;
+    border: none; 
+    transition: all 0.3s ease; 
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+.change:hover {
+    background-color: #55555587; 
+    transform: scale(1.05); 
+}
+
+.day:hover {
+    background-color: #ffffffd2 !important;
+    color: black;
+}
+
+.day.today {
+    font-weight: bold;
+    background: #888;
+    color: white;
+}
+
+.selectedDay::first-letter {
+    text-transform: capitalize;
+}
+
+.day.select {
+    box-shadow: 0px 0px 2px 2px white;
+    background: #5a5a5a;
+}
+
+.timeContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+}
+
+.noTime {
+    margin-bottom: 7rem !important;
+}
+
+.time {
+    padding: 1rem 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.timeSelection {
+    margin: 0;
+}
+
+.time:hover {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.time.select {
+    box-shadow: 0px 0px 1px 1px white;
+    background: #5a5a5a;
+}
+
+
+
+.selectedDatetime {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    justify-content: center;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.booked {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 0, 0, 0.6);
+    border-radius: 50%;
+    bottom: 2.5rem;
+    left: 4.8rem;      
+}
+
+.free {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 255, 38, 0.6);
+    border-radius: 50%;
+    bottom: 2.5rem;
+    left: 4.8rem;      
+}
+
+.nextButton {
+    justify-self: center;
+    border: 12px;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(0, 150, 200), rgb(30, 0, 200));
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0.5rem 0;
+    border-radius: 8px;
+    transition: all ease-in-out 0.3;
+}
+
+.nextButton:hover {
+    box-shadow: 0 3px 15px rgba(255, 255, 255, 0.4);
+}
+
+.noDate {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    color: #666;
+    font-size: 1.5rem;
+}
+
+.noDate>span{
+    margin-bottom: 2rem;
+}
+
+.bookedTime {
+    pointer-events: none;
+    opacity: 0.4;    
+}
+
+.day.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+.day, .empty {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.day {
+    background: #333;
+    color: white;
+}
+
+.day:hover {
+    background: #ffffffd2;
+    color: black;
+    box-shadow: 0 0 6px #0fd;
+}
+
+.day.today {
+    font-weight: bold;
+    background: #0fd;
+    color: black;
+}
+
+.day.select {
+    background: #5a5a5a;
+    box-shadow: 0 0 0 2px white;
+}
+
+.time {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid #ffffff33;
+    color: white;
+}
+
+.time:hover {
+    background: #ffffffd2;
+    color: black;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1524px) {
+  .calendarSelect {
+    grid-template-columns: 1fr;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem;
+    height: auto;
+    margin-top: 8rem;
+    margin-bottom: 7rem;
+  }
+  .free,.booked{
+    opacity: 0;
+  }
+
+  .calendar {
+    grid-template-columns: 1fr;
+  }
+
+  .calendarInside {
+    padding: 1rem;
+  }
+
+  .dateSelect {
+    height: auto;
+    margin: 2rem 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .currentMonth {
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+
+  .weekDays {
+    font-size: 1.2rem;
+  }
+
+  .day, .empty {
+    font-size: 1.2rem;
+    height: 2.5rem;
+  }
+
+  .timeContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .time {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .nextButton {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .weekDays {
+    font-size: 1rem;
+  }
+
+  .day, .empty {
+    font-size: 1rem;
+    height: 2rem;
+  }
+
+  .timeContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .timeContainer.noTime{
+    width: fit-content;
+  }
+
+  .time {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+   width: 100%;
+  }
+
+  .free{
+    bottom: auto;
+    left: auto;
+     
+  }
+
+  .selectedDatetime p {
+    font-size: 1rem;
+  }
+
+  .calendarInside h1.date {
+    font-size: 2rem;
+  }
+}

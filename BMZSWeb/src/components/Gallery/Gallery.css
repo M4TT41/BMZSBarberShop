@@ -1,0 +1,57 @@
+.selection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 0px;
+}
+
+.citySelect {
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    appearance: none; 
+    margin: 0;
+    justify-content: center;
+    
+}
+
+.citySelect:hover {
+    border-color: #0056b3;
+}
+
+.citySelect:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+}
+
+
+.citySelect option {
+    background-color: #f0f0f0; 
+    color: #333;
+}
+
+.loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+   .citySelect{
+    margin-top: 5rem;
+   }
+}
