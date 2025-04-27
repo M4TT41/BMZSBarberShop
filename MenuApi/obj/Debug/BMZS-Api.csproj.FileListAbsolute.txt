@@ -1,0 +1,2 @@
+C:\Users\Kopasz\Desktop\BMZS-Api\BMZS-Api\obj\Debug\BMZS-Api.csproj.AssemblyReference.cache
+C:\Users\Kopasz\Desktop\BMZS-Api\BMZS-Api\obj\Debug\BMZS-Api.csproj.CoreCompileInputs.cache
