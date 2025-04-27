@@ -1,0 +1,1 @@
+start "ApiHandler" ./BMZSApiHandler/bin/Debug/BMZSApiHandler.exe
