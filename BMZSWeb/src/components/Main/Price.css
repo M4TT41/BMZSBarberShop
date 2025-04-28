@@ -108,33 +108,25 @@
     color: #0d47a1;
 }
 
-@media screen and (max-width: 1450px) {
-    .priceContainer {
-        padding: 2rem 1rem;
-    }
+
+
+
+
     
+
+
+@media screen and (max-width: 1468px) {
+
+    .priceContainer{
+        height: 200%;
+        
+    }
+
     .priceListContainer {
         flex-direction: column;
         align-items: center;
+        height: 90%;
         width: 80%;
-        gap: 2rem;
-    }
-    
-    .priceColumn {
-        width: 100%;
-    }
-}
-
-
-
-    
-
-
-@media screen and (max-width: 768px) {
-    .priceListContainer {
-        flex-direction: column;
-        align-items: center;
-        width: 95%;
     }
 
     .priceColumn {
@@ -194,3 +186,4 @@
         font-size: 1.1rem;
     }
 } 
+
