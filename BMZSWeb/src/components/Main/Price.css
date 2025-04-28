@@ -39,7 +39,7 @@
 .priceListContainer {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 90%;
     max-width: 1500px;
     padding: 2rem;
     gap: 3rem;
@@ -110,7 +110,6 @@
 
 @media screen and (max-width: 1450px) {
     .priceContainer {
-
         padding: 2rem 1rem;
     }
     
@@ -125,6 +124,7 @@
         width: 100%;
     }
 }
+
 
 
     
